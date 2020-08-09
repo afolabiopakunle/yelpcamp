@@ -1,6 +1,13 @@
 <%- include ("partials/header.ejs") %>
 
-<h1>Campgrounds</h1>
+<h1>Campgrounds List</h1>
+
+<% campgrounds.forEach(campground => { %>
+<div>
+  <h4><%= campground.name %></h4>
+  <img src="<%= campground.image %>" alt="" />
+</div>
+<% }) %>
 
 <a href="./">Back Home</a>
 
